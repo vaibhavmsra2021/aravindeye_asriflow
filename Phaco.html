@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phaco Uploads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Logo and Title -->
+        <div class="header">
+            <img src="Aravind logo.png" alt="S.V. Aravind Eye Hospital Logo" class="logo">
+            <h2>S.V. Aravind Eye Hospital</h2>
+        </div>
+
+        <h2>Phaco Uploads</h2>
+         <button class="rap"><h2>Download</h2></button>
+        <ul class="item-list">
+            <li>
+                Case sheet Photo
+                <div class="upload-options">
+                    <input type="file" id="case-sheet-photo" accept="image/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="case-sheet-photo" class="upload-btn">📸 Camera</label>
+                    <input type="checkbox" id="case-sheet-photo-uploaded" name="case-sheet-photo-uploaded">
+                    <label for="case-sheet-photo-uploaded">Uploaded</label>
+                </div>
+            </li>
+            <li>
+                Case sheet With Pt Face photo
+                <div class="upload-options">
+                    <input type="file" id="case-sheet-face-photo" accept="image/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="case-sheet-face-photo" class="upload-btn">📸 Camera</label>
+                    <input type="checkbox" id="case-sheet-face-photo-uploaded" name="case-sheet-face-photo-uploaded">
+                    <label for="case-sheet-face-photo-uploaded">Uploaded</label>
+                </div>
+            </li>
+            <li>
+                Case Sheet With lens(Box) Photo
+                <div class="upload-options">
+                    <input type="file" id="lens-box-photo" accept="image/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="lens-box-photo" class="upload-btn">📸 Camera</label>
+                    <input type="checkbox" id="lens-box-photo-uploaded" name="lens-box-photo-uploaded">
+                    <label for="lens-box-photo-uploaded">Uploaded</label>
+                </div>
+            </li>
+            <li>
+                Approval Copy
+                <div class="upload-options">
+                    <input type="file" id="approval-copy" accept="image/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="approval-copy" class="upload-btn">📸 Camera</label>
+                    <input type="checkbox" id="approval-copy-uploaded" name="approval-copy-uploaded">
+                    <label for="approval-copy-uploaded">Uploaded</label>
+                </div>
+            </li>
+            <li>
+                Drapping photo
+                <div class="upload-options">
+                    <input type="file" id="drapping-photo" accept="image/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="drapping-photo" class="upload-btn">📸 Camera</label>
+                    <input type="checkbox" id="drapping-photo-uploaded" name="drapping-photo-uploaded">
+                    <label for="drapping-photo-uploaded">Uploaded</label>
+                </div>
+            </li>
+            <li>
+                Caratum photo
+                <div class="upload-options">
+                    <input type="file" id="caratum-photo" accept="image/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="caratum-photo" class="upload-btn">📸 Camera</label>
+                    <input type="checkbox" id="caratum-photo-uploaded" name="caratum-photo-uploaded">
+                    <label for="caratum-photo-uploaded">Uploaded</label>
+                </div>
+            </li>
+            <li>
+                Side Knife Photo
+                <div class="upload-options">
+                    <input type="file" id="side-knife-photo" accept="image/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="side-knife-photo" class="upload-btn">📸 Camera</label>
+                    <input type="checkbox" id="side-knife-photo-uploaded" name="side-knife-photo-uploaded">
+                    <label for="side-knife-photo-uploaded">Uploaded</label>
+                </div>
+            </li>
+            <li>
+                Rexsis photo
+                <div class="upload-options">
+                    <input type="file" id="rexsis-photo" accept="image/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="rexsis-photo" class="upload-btn">📸 Camera</label>
+                    <input type="checkbox" id="rexsis-photo-uploaded" name="rexsis-photo-uploaded">
+                    <label for="rexsis-photo-uploaded">Uploaded</label>
+                </div>
+            </li>
+            <li>
+                Probing photo
+                <div class="upload-options">
+                    <input type="file" id="probing-photo" accept="image/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="probing-photo" class="upload-btn">📸 Camera</label>
+                    <input type="checkbox" id="probing-photo-uploaded" name="probing-photo-uploaded">
+                    <label for="probing-photo-uploaded">Uploaded</label>
+                </div>
+            </li>
+            <li>
+                Lens Insertion photo
+                <div class="upload-options">
+                    <input type="file" id="lens-insertion-photo" accept="image/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="lens-insertion-photo" class="upload-btn">📸 Camera</label>
+                    <input type="checkbox" id="lens-insertion-photo-uploaded" name="lens-insertion-photo-uploaded">
+                    <label for="lens-insertion-photo-uploaded">Uploaded</label>
+                </div>
+            </li>
+            <li>
+                Cortex Wash photo
+                <div class="upload-options">
+                    <input type="file" id="cortex-wash-photo" accept="image/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="cortex-wash-photo" class="upload-btn">📸 Camera</label>
+                    <input type="checkbox" id="cortex-wash-photo-uploaded" name="cortex-wash-photo-uploaded">
+                    <label for="cortex-wash-photo-uploaded">Uploaded</label>
+                </div>
+            </li>
+            <li>
+                Bandage photo
+                <div class="upload-options">
+                    <input type="file" id="bandage-photo" accept="image/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="bandage-photo" class="upload-btn">📸 Camera</label>
+                    <input type="checkbox" id="bandage-photo-uploaded" name="bandage-photo-uploaded">
+                    <label for="bandage-photo-uploaded">Uploaded</label>
+                </div>
+            </li>
+            <li>
+                1-Minute Video of Patient
+                <div class="upload-options">
+                    <input type="file" id="patient-video" accept="video/*" style="display:none;" onchange="checkUpload(this)">
+                    <label for="patient-video" class="upload-btn">📹 Video</label>
+                    <input type="checkbox" id="patient-video-uploaded" name="patient-video-uploaded">
+                    <label for="patient-video-uploaded">Uploaded</label>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function checkUpload(input) {
+            const checkbox = document.getElementById(input.id + '-uploaded');
+            if (input.files.length > 0) {
+                checkbox.checked = true;
+            } else {
+                checkbox.checked = false;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="PatientDetail.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Logo and Title -->
+        <div class="header">
+            <img src="Aravind logo.png" alt="S.V. Aravind Eye Hospital Logo" class="logo">
+            <h2>S.V. Aravind Eye Hospital</h2>
+        </div>
+
+        <h2>Patient Details</h2>
+        <div class="left">
+            <p><strong>EMR ID:</strong> <span id="emr-id"></span></p>
+            <p><strong>First Name:</strong> <span id="first-name"></span></p>
+            <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+            <p><strong>Date of Admission:</strong> <span id="dob"></span></p>
+            <p><strong>Gender:</strong> <span id="gender"></span></p>
+            <!-- Add more details as needed -->
+        </div>
+
+        <button class="edit">Edit Profile</button>
+        <div class="button-container">
+            <a href="PreWork.html"><button class="preWork">
+                    Pre-Work
+                </button></a>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <div class="dropdown">
+                <button class="dropbtn">
+                    OT
+                </button>
+                <div class="dropdown-content">
+                    <a href="Sics.html">SICS</a>
+                    <a href="Phaco.html">Phaco</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="PatientDetail.js" type="module"></script>
+</body>
+
+</html>

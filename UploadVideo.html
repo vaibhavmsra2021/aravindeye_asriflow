@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Logo and Title -->
+        <div class="header">
+            <img src="Aravind logo.png" alt="S.V. Aravind Eye Hospital Logo" class="logo">
+            <h2>S.V. Aravind Eye Hospital</h2>
+        </div>
+
+        <h2>Upload Video</h2>
+        <div class="upload-options">
+            <input type="file" id="patient-video" accept="video/*" style="display:none;" onchange="checkUpload(this)">
+            <label for="patient-video" class="upload-btn">📹 Video</label>
+            <input type="checkbox" id="patient-video-uploaded" name="patient-video-uploaded">
+            <label for="patient-video-uploaded">Uploaded</label>
+        </div>
+    </div>
+    <script>
+        function checkUpload(input) {
+            const checkbox = document.getElementById(input.id + '-uploaded');
+            if (input.files.length > 0) {
+                checkbox.checked = true;
+            } else {
+                checkbox.checked = false;
+            }
+        }
+    </script>
+</body>
+
+</html>
